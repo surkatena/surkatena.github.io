@@ -1952,6 +1952,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     position: inherit;
+    margin: 0 auto;
   }
   .realization .screen_right,
   .realization .screen_center,
