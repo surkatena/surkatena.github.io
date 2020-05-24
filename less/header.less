@@ -1,5 +1,7 @@
 .header {
-    width: @width;
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     margin: 0 auto;
     background-image: url(../img/bg_header_photo.jpg);
     background-repeat: no-repeat;
@@ -34,7 +36,11 @@
         &_menu {   
             display: flex;     
             align-items: center; 
-            justify-content: flex-end;     
+            justify-content: flex-end; 
+            &_burger_button,
+            &_burger {
+                display: none;
+            }    
             &_item {
                 text-decoration: none;
                 .text(montserrat, 14px, 300, white);

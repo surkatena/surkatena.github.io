@@ -1,10 +1,15 @@
 .main {
-    width: @width;
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     margin: 0 auto;
     background-color: #fff;    
 }
 /*---Servises---*/
 .servises {
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     .container;
     margin: 80px 0;
     display: flex;
@@ -14,7 +19,7 @@
         width: 265px;        
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; 
         justify-content: center;
         &_icon {
             display: block;
@@ -55,7 +60,9 @@
 
 /*---Realization---*/
 .realization {
-    width: @width;
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     .container;
     margin: 0 auto;      
     background-color: #fbfaf8; 
@@ -97,7 +104,9 @@
 
 /*---Aside---*/
 .aside {
-    width: @width;
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     margin: 0 auto;    
     .container; 
     display: flex;
@@ -141,12 +150,16 @@
 
 /*---Video---*/
 .video {
-    width: @width;
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     height: 705px;
     position: relative;
     &-play { 
         display: block;       
-        width: @width;
+        max-width: @width;
+        width: 100%;
+        min-width: 300px;
         object-fit: cover;
         overflow: hidden;
     }
@@ -207,7 +220,9 @@
 
 /*---Project---*/
 .project {
-    width: @width;
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     .container;
     margin: 0;
     display: flex;
@@ -233,6 +248,7 @@
         margin: 40px 0;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         &-item {
             .text(montserrat, 14px, 300, @text_color);
             padding: 10px 24px;
@@ -384,7 +400,9 @@
 
 /*---Mobile---*/
 .mobile {
-    width: @width;
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     .container;
     margin: 0;
     background-color: #fbfaf8;
@@ -434,7 +452,9 @@
 
 /*---Counting---*/
 .count {
-    width: @width;
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     .container;
     background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
     margin: 0;
@@ -473,7 +493,9 @@
 
 /*---Posts---*/
 .post {
-    width: @width;
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     .container;
     background-color: #fff;
     display: flex;
@@ -492,11 +514,15 @@
         text-align: center;
     }
     &-inner {
-        width: @width;
+        max-width: @width;
+        width:200%;
+        min-width: 300px;
         .container;
         margin: 0;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &-item {
         width: 370px;
@@ -682,9 +708,12 @@
 
 /*---Partners---*/
 .partners {
-    width: @width;
+    max-width: @width;
+    width: 100%;
+    min-width: 300px;
     .container;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-image: url(../img/bg_partners.jpg);
@@ -694,7 +723,7 @@
     background-size: cover;
     &-logo {
         display: block;
-        margin: 140px 45px;
+        margin: 140px 40px;
         text-decoration: none;
         &-item {
             display: block;

@@ -1,13 +1,16 @@
 .footer {
-    width: @width;    
+    max-width: @width;
+    width: 100%;  
+    min-width: 300px;  
     margin: 0 auto;
     background-color: #191919;    
 }
 
 .information {
-    width: @width;    
-    .container;
-    min-height: 200px;
+    max-width: @width;
+    width: 100%;  
+    min-width: 300px;   
+    .container;    
     background-color: #191919;
     display: flex;
     flex-wrap: wrap;
@@ -17,8 +20,9 @@
         margin: 80px 0 0 0;
         width: @width/7;
         &-link {
-            display: flex;
-            align-items: center;             
+            display: flex;            
+            align-items: center; 
+            flex-wrap: wrap;            
             text-decoration: none;
             margin: 0 0 29px 0;
             &-icon {
@@ -195,7 +199,8 @@
         }
         &-img {            
             display: flex;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
+            justify-content: space-around; 
             &-photo {
                 display: block;
             } 
@@ -218,7 +223,9 @@
 
 
 .copyright {
-    width: @width;
+    max-width: @width;
+    width: 100%;  
+    min-width: 300px;
     margin: 0;
     .container;   
     background-color: #111111; 
