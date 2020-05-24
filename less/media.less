@@ -1,4 +1,36 @@
 @media(max-width: 1370px){
+
+    .header_inner{
+        padding: 0 50px;
+    }
+    .header_inner_menu {
+        flex-wrap: wrap;        
+    }
+    .header_inner_menu_item{
+        margin: 3%;
+    }
+    .carusel_inner {
+        margin: 40% auto 0;
+    }
+    .carusel_subtitle{
+        font-size: 26px;
+    }
+    .carusel_title{
+        font-size: 36px;
+    }
+    .carusel_text{
+        max-width: 640px;
+        width: 70%;
+        font-size: 18px;
+    }
+    .carusel .btn_left {
+        margin: 0 5% 0 0;
+    }
+    .carusel .btn_right{
+        margin: 0 5% 0 0;
+    }
+
+
     .servises {
       padding: 0 100px;
     }
@@ -19,7 +51,7 @@
       max-width: 770px;
       width: 50%;
       min-width: 200px;
-      margin: 0 auto 5%;       
+      margin: 0 5%;            
     }
     .realization .screen_left {   
       left: -35%; 
@@ -37,6 +69,7 @@
       width: 80%;
       min-width: 200px;
       height: auto;
+      
     }
 
     .aside {
@@ -217,17 +250,30 @@
         width: 50px;
         height: 50px;
         outline: 1px solid black;
-        background-image:  url('https://cdn3.iconfinder.com/data/icons/mobile-friendly-ui/100/menu-128.png');
-        background-size: 100%;
-        background-repeat: no-repeat ;
-        background-position: 0 0;
         background-color: #fff;
+        opacity: 0.3;
+        position: relative;
     }
     .header_inner_menu_burger:checked ~ .header_inner_menu_item {
         height: auto;
         visibility: visible;        
     }
-
+    .header_inner_menu_burger_button_line{
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        margin: 0 auto;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+    }
+    .line_top{
+        top: 17px;
+    }
+    .line_bottom{
+        top: 32px;
+    }
     .header_inner_menu_cart,
     .header_inner_search, 
     .header_inner_search_label,
@@ -237,10 +283,6 @@
     .carusel {
         display: none;
     }
-
-
-
-
 
 
     .servises {
@@ -268,16 +310,17 @@
       display:flex;
       flex-direction: column;
       position: inherit;
+      align-items: center; 
     }
     .realization .screen_right, 
     .realization .screen_center,
     .realization .screen_left {
       position: inherit;
-      margin: 10px 0;
+      margin: 3% auto;
       max-width: 576px;
       width: 80%;
       height: auto;
-      min-width: 300px;
+      min-width: 300px;      
     }
     .realization .screen_right:hover, 
     .realization .screen_center:hover,
